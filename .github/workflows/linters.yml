@@ -20,6 +20,7 @@ jobs:
           [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.rubocop.yml
       - name: Rubocop Report
         run: rubocop --color
+<<<<<<< HEAD
   stylelint:
     name: Stylelint
     runs-on: ubuntu-18.04
@@ -34,3 +35,5 @@ jobs:
           [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
+=======
+>>>>>>> 68a8edeab4468765c5e489ee09c6f02ba818eaa4
